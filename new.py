@@ -1,7 +1,7 @@
 import asyncio
 import json
 
-from bot_init import bot_key, load_user, bot_all_key, bot_dir
+from init import bot_key, load_user, bot_all_key, bot_dir
 
 
 load_user = {

@@ -5,7 +5,7 @@ import asyncio
 from aiogram import Dispatcher
 from aiogram.fsm.storage.memory import MemoryStorage
 
-from bot_init import bot, logging
+from init import bot, logging
 from bot_router import router
 
 

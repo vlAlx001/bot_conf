@@ -2,7 +2,7 @@
 
 import json
 
-from bot_init import load_user, bot_dir, logging
+from init import load_user, bot_dir, logging
 
 
 def get_reg(A: int) -> str | bool:

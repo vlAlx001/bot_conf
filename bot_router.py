@@ -10,7 +10,7 @@ from aiogram.filters import Command
 from aiogram.fsm.context import FSMContext
 from aiogram.utils.markdown import hide_link
 
-from bot_init import bot, bot_all_key, bot_dir
+from init import bot, bot_all_key, bot_dir
 from router_state import Reg
 from router_key import key_no, key_I, key_R
 from router_init import get_reg, set_reg, del_reg
