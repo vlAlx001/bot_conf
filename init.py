@@ -45,6 +45,8 @@ load_user = {
     'resp': []
 }
 
+id_user = {}
+
 def main():
     global load_user
     if os.path.isfile(f'{bot_dir}/user.json'):
@@ -53,6 +55,13 @@ def main():
     else:
         with open(f'{bot_dir}user.json', 'w') as f:
             json.dump(load_user, f)
+    global id_user
+    if os.path.isfile(f'{bot_dir}/id_user.json'):
+        with open(f'{bot_dir}/id_user.json', 'r') as f:
+            id_user = json.load(f)
+    else:
+        with open(f'{bot_dir}id_user.json', 'w') as f:
+            json.dump(id_user, f)
     try:
         url = f'https://api.telegram.org/bot{os.getenv("TOKEN")}/getMe'
         if requests.get(url).status_code != 200: raise Exception('Бот не отвечает!')

@@ -8,3 +8,6 @@ class Reg(StatesGroup):
     id = State()
     name = State()
     num = State()
+
+class DelReg(StatesGroup):
+    otvet = State()
