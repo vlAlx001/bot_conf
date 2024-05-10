@@ -31,6 +31,8 @@ bot = Bot(token=os.getenv('TOKEN'), default=DefaultBotProperties(parse_mode=Pars
 '''
 start - Активность
 stop - Выйти из конференции
+test1 - 1 вариант
+test2 - 2 вариант
 help - Помощь
 '''
 
@@ -47,6 +49,10 @@ load_user = {
 
 id_user = {}
 
+questions_list = {
+    'id': []
+}
+
 def main():
     global load_user
     if os.path.isfile(f'{bot_dir}/user.json'):
@@ -62,6 +68,13 @@ def main():
     else:
         with open(f'{bot_dir}id_user.json', 'w') as f:
             json.dump(id_user, f)
+    global questions_list
+    if os.path.isfile(f'{bot_dir}/questions.json'):
+        with open(f'{bot_dir}/questions.json', 'r') as f:
+            questions_list = json.load(f)
+    else:
+        with open(f'{bot_dir}questions.json', 'w') as f:
+            json.dump(questions_list, f)
     try:
         url = f'https://api.telegram.org/bot{os.getenv("TOKEN")}/getMe'
         if requests.get(url).status_code != 200: raise Exception('Бот не отвечает!')

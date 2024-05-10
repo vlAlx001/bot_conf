@@ -1,6 +1,6 @@
-ты программист высокого уровня. напиши код на python 3.11 используя библиотеку aiogram телеграмм бота. Основные команды (start, stop, help). Бот должен уметь принимать сообщения, отвечать на сообщения, вести диалог с сохранением состояний разговора, в конце разговора произвести запись разговора в файл, используя Storage for FSM и FSM strategy
+на первоначальную форму
 
-
+https://docs.google.com/forms/d/e/1FAIpQLSfCwvk8iNbplO5pVDnIsunyUDiSE6NasQbCOrXis9SeA2Ugnw/viewform?usp=sf_link
 
 
 

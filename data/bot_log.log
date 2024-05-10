@@ -1,0 +1,12 @@
+2024-05-10 14:24:32,491 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+2024-05-10 14:24:33,046 - DEBUG - https://api.telegram.org:443 "GET /bot6737330669:AAEzAmnOUnZ0Rqaj24kCSP4iXRey0A6dRFE/getMe HTTP/1.1" 200 313
+2024-05-10 14:24:33,066 - DEBUG - Using selector: EpollSelector
+2024-05-10 14:24:33,582 - INFO - Start polling
+2024-05-10 14:24:33,754 - INFO - Run polling for bot @vl_start_bot id=6737330669 - 'Круглый стол ))) 🍀☀️'
+2024-05-10 14:24:36,041 - INFO - Update id=120322285 is handled. Duration 612 ms by bot id=6737330669
+2024-05-10 14:24:38,006 - INFO - Update id=120322286 is handled. Duration 763 ms by bot id=6737330669
+2024-05-10 14:24:42,835 - INFO - Update id=120322287 is handled. Duration 193 ms by bot id=6737330669
+2024-05-10 14:24:44,247 - INFO - Update id=120322288 is handled. Duration 372 ms by bot id=6737330669
+2024-05-10 14:24:49,323 - INFO - Update id=120322289 is handled. Duration 500 ms by bot id=6737330669
+2024-05-10 14:25:07,984 - INFO - Update id=120322290 is handled. Duration 535 ms by bot id=6737330669
+2024-05-10 14:25:10,145 - INFO - Update id=120322291 is handled. Duration 546 ms by bot id=6737330669
