@@ -1,12 +1,17 @@
-2024-05-10 14:24:32,491 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
-2024-05-10 14:24:33,046 - DEBUG - https://api.telegram.org:443 "GET /bot6737330669:AAEzAmnOUnZ0Rqaj24kCSP4iXRey0A6dRFE/getMe HTTP/1.1" 200 313
-2024-05-10 14:24:33,066 - DEBUG - Using selector: EpollSelector
-2024-05-10 14:24:33,582 - INFO - Start polling
-2024-05-10 14:24:33,754 - INFO - Run polling for bot @vl_start_bot id=6737330669 - 'Круглый стол ))) 🍀☀️'
-2024-05-10 14:24:36,041 - INFO - Update id=120322285 is handled. Duration 612 ms by bot id=6737330669
-2024-05-10 14:24:38,006 - INFO - Update id=120322286 is handled. Duration 763 ms by bot id=6737330669
-2024-05-10 14:24:42,835 - INFO - Update id=120322287 is handled. Duration 193 ms by bot id=6737330669
-2024-05-10 14:24:44,247 - INFO - Update id=120322288 is handled. Duration 372 ms by bot id=6737330669
-2024-05-10 14:24:49,323 - INFO - Update id=120322289 is handled. Duration 500 ms by bot id=6737330669
-2024-05-10 14:25:07,984 - INFO - Update id=120322290 is handled. Duration 535 ms by bot id=6737330669
-2024-05-10 14:25:10,145 - INFO - Update id=120322291 is handled. Duration 546 ms by bot id=6737330669
+2024-05-14 19:35:25,383 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+2024-05-14 19:35:25,861 - DEBUG - https://api.telegram.org:443 "GET /bot6737330669:AAEzAmnOUnZ0Rqaj24kCSP4iXRey0A6dRFE/getMe HTTP/1.1" 200 295
+2024-05-14 19:35:26,272 - DEBUG - Using selector: EpollSelector
+2024-05-14 19:35:26,754 - INFO - Start polling
+2024-05-14 19:35:26,916 - INFO - Run polling for bot @vl_start_bot id=6737330669 - '🍀Модератор☀️'
+2024-05-14 19:35:41,114 - INFO - Update id=120323276 is handled. Duration 632 ms by bot id=6737330669
+2024-05-14 19:35:43,318 - INFO - Update id=120323277 is handled. Duration 394 ms by bot id=6737330669
+2024-05-14 19:36:00,963 - INFO - Update id=120323278 is handled. Duration 883 ms by bot id=6737330669
+2024-05-14 19:36:03,283 - INFO - Update id=120323279 is handled. Duration 720 ms by bot id=6737330669
+2024-05-14 19:36:31,228 - INFO - Update id=120323280 is handled. Duration 620 ms by bot id=6737330669
+2024-05-14 19:36:38,347 - INFO - Update id=120323281 is handled. Duration 491 ms by bot id=6737330669
+2024-05-14 19:36:45,103 - INFO - Update id=120323282 is handled. Duration 973 ms by bot id=6737330669
+2024-05-14 19:36:53,295 - INFO - Update id=120323283 is handled. Duration 778 ms by bot id=6737330669
+2024-05-14 19:37:07,755 - INFO - Update id=120323284 is handled. Duration 552 ms by bot id=6737330669
+2024-05-14 19:37:13,890 - INFO - Update id=120323285 is handled. Duration 394 ms by bot id=6737330669
+2024-05-14 19:37:22,549 - INFO - Update id=120323286 is handled. Duration 715 ms by bot id=6737330669
+2024-05-14 19:37:29,208 - INFO - Update id=120323287 is handled. Duration 1062 ms by bot id=6737330669

@@ -2,6 +2,8 @@
 
 import json
 import os
+import pandas as pd
+from datetime import datetime
 
 from init import logging, load_user, id_user, questions_list, bot_dir
 
@@ -67,17 +69,54 @@ def get_list_id(A='resp') -> list:
 
 def set_questions(data: dict) -> bool:
     global questions_list
-    print(questions_list)
-    print(data)
-    temp_dict = {str(data['id']): [data['msg_text'], data['text']]}
+    temp_dict = {hash(data['text'].strip()): [str(data['id']), data['msg_text'], data['text']]}
     questions_list['id'].append(temp_dict)
-    print(questions_list)
+    print(f'Кол-во вопросов: {len(questions_list["id"])}')
     save_json(questions_list, 'questions.json')
     return True
 
 def get_questions() -> list:
     global questions_list
-
-    print(questions_list)
-
     return questions_list['id']
+
+def get_answer(text: str) -> list:
+    global questions_list
+    for i in questions_list['id']:
+        answer = i.get(hash(text.strip()))
+        if answer: return answer
+    logging.error('Непредвиденная работа функции get_answer, ответ не найден в базе!!!')
+    return 
+
+def del_answer(text:str) -> None:
+    global questions_list
+    a = ''
+    b = []
+    for i in questions_list['id']:
+        answer = i.get(hash(text.strip()))
+        if answer: continue
+        b.append(i)
+    questions_list['id'] = b
+    save_json(questions_list, 'questions.json')
+
+def load_answer():
+    df = pd.DataFrame(columns=['datetime', 'name', 'names_answer', 
+                               'msg_temp', 'text', 'text_answer'])
+    if os.path.isfile('answer.xlsx'):
+        df = pd.read_excel('answer.xlsx')
+    df1 = df[['datetime', 'name', 'names_answer', 
+                               'msg_temp', 'text', 'text_answer']].copy()
+    return df1
+
+def save_ansver(A: dict) -> None:
+    df = load_answer()
+    temp_dict = {
+        'datetime': [str(datetime.now())],
+        'name': [A['names_in']],
+        'names_answer': [A['names_answer']],
+        'msg_temp': [A['msg_temp']],
+        'text': [A['text']],
+        'text_answer': [A['text_answer']]
+    }
+    df1 = pd.DataFrame(temp_dict)
+    df = pd.concat([df, df1])
+    df.reset_index(drop=True).to_excel('answer.xlsx')

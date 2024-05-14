@@ -11,6 +11,10 @@ from bot_router import router
 
 dp = Dispatcher(storage=MemoryStorage())
 
+#to-do добввить ввывод в файл
+
+
+
 async def main() -> None:
     dp.include_router(router)
     await bot.delete_webhook(drop_pending_updates=True)
